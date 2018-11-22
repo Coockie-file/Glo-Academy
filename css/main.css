@@ -102,4 +102,99 @@
 .header-text__callme button:focus {
   outline: none;
 }
+
+.block {
+  background-color: #f5f5f5;
+}
+
+.block .subheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.block .subheader-text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.block .subheader-text h1 {
+  margin-bottom: 70px;
+  color: #333333;
+  font-family: "Museo Sans Bold";
+  font-size: 41px;
+  font-weight: 400;
+  line-height: 55px;
+}
+
+.block .subheader-text h1 span {
+  margin-top: 50px;
+  font-size: 20px;
+  line-height: 65px;
+}
+
+.block .subheader-text__advantages {
+  max-width: 350px;
+  color: #333333;
+  font-family: "Museo Sans Light";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.block .subheader-text__advantages-advantage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.block .subheader-text__advantages-image {
+  min-width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+  border-radius: 50%;
+  border: 2px solid #ffd200;
+}
+
+.block .subheader-image {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+img {
+  max-width: 100%;
+}
 /*# sourceMappingURL=main.css.map */
