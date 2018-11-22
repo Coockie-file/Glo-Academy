@@ -4,8 +4,27 @@
 @import '_mixins.sass'
 @import '_header.sass'
 @import '_subheader.sass'
+@import '_feedback.sass'
 
 
-
+*,*::after,*::before
+  box-sizing: border-box
 img 
   max-width: 100%
+
+.container
+  +display
+  width: $content-width
+  margin: 0 auto
+
+button
+ border: none
+ +button
+ outline: none
+ &:hover
+   background-color: lighten($primary-color, 15%)
+ &:active
+   background-color: $primary-color
+   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3)
+ &:focus
+   outline: none
