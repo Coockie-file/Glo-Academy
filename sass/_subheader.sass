@@ -2,6 +2,7 @@
   padding-top: 60px
 .subheader
   background-color: $bg-color
+  +display
   &-text
     flex-basis: 50%
     & h1
@@ -40,3 +41,8 @@
         border: 2px solid $primary-color     
   &-image
     flex-basis: 50%
+    position: relative
+    z-index: 99
+    transform-origin: left top
+    transform: scale(1.3)
+   

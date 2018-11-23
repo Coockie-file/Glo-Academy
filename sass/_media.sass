@@ -1,0 +1,103 @@
+@media (max-width: 1200px)
+  .container
+    width: 960px
+    &-form
+      &::after
+        content: ''
+        width: 80%
+        margin-right: 400px
+        background-color: #ffffff
+@media (max-width: 992px)
+  .container
+    width: 768px
+  .subheader
+    &-text
+      & h1
+        margin-bottom: 50px
+        font-size: 30px
+        line-height: 35px
+        & span
+          font-size: 18px
+          line-height: 20px
+  .feedback
+    background-size: cover
+    background-position: center
+    position: statick
+    &::before
+      content: ''
+      width: 0%
+@media (max-width: 768px)
+  .container
+    width: 576px
+  .second
+    flex-flow: column nowrap
+  .subheader
+    &-text
+      width: 460px
+      justify-content: center
+      & h1
+        text-align: center
+    &-image
+      transform: none
+  .feedback
+    &-form
+      &__headline
+        text-align: center
+      &__call-you
+        color: darken($lightgray,40%)
+      & img
+        border: 2px solid gray
+        background-color: gray
+@media (max-width: 576px)
+  .container
+    width: 320px
+  .header
+    &-text
+      +display
+      flex-flow: column nowrap
+      justify-content: center
+      text-align: center
+      &__contacts
+        text-align: right
+        order: 1
+        padding-left: 10px
+      &__contacts a
+        font-size: 16px
+      &__callme        
+        text-align: right
+        & .me
+          display: none
+  .subheader
+    &-text
+      width: 260px
+      & h1
+        font-size: 20px
+        line-height: 30px
+        & span
+          font-size: 12px
+          line-height: 5px
+    &-image
+      margin: 0 auto
+  .feedback
+    &-form
+      margin: 0 auto
+      & input
+        display: block
+        width: 100%
+      &__call
+        +display
+        flex-flow: column nowrap
+        text-align: center
+        & img
+          margin: 10px auto
+          
+ 
+    
+    
+    
+    
+        
+
+
+
+    

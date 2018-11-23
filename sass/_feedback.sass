@@ -1,6 +1,18 @@
 .feedback
   padding: 94px 0
   background: url('../Imgs/feedback/kitchen.jpg') no-repeat center right -40%
+  background-size: contain
+  position: relative
+  z-index: 1
+  &::before
+    content: ''
+    left: 0
+    top: 0
+    width: 60%
+    height: 100%
+    background-color: #ffffff
+    position: absolute
+    z-index: -1
   &-form
     max-width: 575px
     &__headline
