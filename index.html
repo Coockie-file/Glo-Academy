@@ -22,7 +22,7 @@
           <span>Калуга, Москва, МО</span> <br>
           <a href="tel:+74954225131">+7 (495) 42-251-31</a>
         </div>
-        <div class="header-text__callme">
+        <div class="header-text__callme button-callback">
           <button>Перезвоните <span class="me">мне</span></button>
         </div>
       </div>
@@ -104,6 +104,91 @@
     </div>
   </div>
 
+  <div class="modal">
+    <div class="modal-wrap">
+      <div class="modal-description">
+
+        <div class="modal-description__block">
+          <div class="modal-description__block-image">
+            <img src="Imgs/modal windows/first.png" alt="">
+          </div>
+          <div class="modal-description__block-text">
+            <h1>Ванная комната</h1>
+            <div class="line"></div>
+            <p>135*150 - <span>  31 000 руб.</span>
+                <br>
+               170*170 - <span> 43 000 руб.</span></p>
+          </div>
+        </div>
+
+        <div class="modal-description__block">
+            <div class="modal-description__block-image">
+              <img src="Imgs/modal windows/second.png" alt="">
+            </div>
+            <div class="modal-description__block-text">
+              <h1>Туалет</h1>
+              <div class="line"></div>
+              <p>135*70 - <span>14 000 руб.</span></p>
+            </div>
+        </div>
+
+        <div class="modal-description__block">
+            <div class="modal-description__block-image">
+              <img src="Imgs/modal windows/third.png" alt="">
+            </div>
+            <div class="modal-description__block-text">
+              <h1>Совмещенный санузел</h1>
+              <div class="line"></div>
+              <p>170*210 - <span>54 000 руб.</span></p>
+            </div>
+        </div>
+
+        <div class="modal-description__services">
+            <div class="modal-description__services-headline">В стоимость работ входит</div>
+            <div class="modal-description__services-list">
+                <ul>
+                    <li>Демонтаж старого покрытия стен и пола</li>
+                    <li>Выравнивание стен гипсовыми составами</li>
+                    <li>Грунтовка стен и пола антисептиком, бетоноконтактом</li>
+                    <li>Монтаж кафельной плитки на полу и стенах</li>
+                    <li>Установка реечного или натяжного потолка, светильников</li>
+                    <li>Монтаж двери с коробкой</li>
+                </ul>
+            </div>
+          </div>
+      </div>
+
+      
+      
+      <div class="modal-form">
+        <div class="modal-form__headline">
+          <h1>Узнайте точную стоимость <br>
+              ремонта по телефону!</h1>
+          <h3>Заполните поля ниже - мы свяжемся с Вами</h3>
+        </div>
+        <div class="modal-form__input">
+          <input type="text" placeholder="Ваше имя">
+          <input type="tel" placeholder="Ваш телефон">
+        </div>
+        <div class="modal-form__button">
+          <button type="submit">Узнать стоимость</button>
+        </div>
+        <div class="modal-form__feedback">
+          <div class="modal-form__feedback-callus">Или Вы можете перезвонить нам сами по телефону:</div>
+          <div class="modal-form__feedback-tel">+7 (8182) 42-51-31</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+  document.querySelector('.button-callback').addEventListener('click', function(){
+    document.querySelector('.modal').classList.toggle('modal-visible');
+  });
+  document.querySelector('.modal').addEventListener('click', function(){
+    document.querySelector('.modal').classList.toggle('modal-visible')
+  })
+</script>
 
 </body>
-</html>
+</html>,
