@@ -587,7 +587,7 @@ input {
 
 @media (max-width: 992px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
   .subheader-text h1 {
     margin-bottom: 50px;
@@ -598,6 +598,28 @@ input {
     font-size: 18px;
     line-height: 20px;
   }
+  .modal-wrap {
+    width: 768px;
+  }
+  .modal-form__headline h1 {
+    margin-bottom: 15px;
+    font-size: 25px;
+  }
+  .modal-form__headline h3 {
+    margin-bottom: 25px;
+  }
+  .modal-form__input {
+    max-width: 240px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  .modal-form__button {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+  .modal-description {
+    padding: 40px 45px 35px 40px;
+  }
   .feedback {
     background-size: cover;
     background-position: center;
@@ -607,11 +629,14 @@ input {
     content: '';
     width: 0%;
   }
+  .feedback-form {
+    max-width: 230px;
+  }
 }
 
 @media (max-width: 768px) {
   .container {
-    width: 576px;
+    max-width: 576px;
   }
   .second {
     -webkit-box-orient: vertical;
@@ -641,6 +666,37 @@ input {
   .feedback-form img {
     border: 2px solid gray;
     background-color: gray;
+  }
+  .modal-wrap {
+    width: 576px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    min-height: 100vh;
+  }
+  .modal-description {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    height: 100%;
+    padding-left: 130px;
+  }
+  .modal-description__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row  wrap;
+            flex-flow: row  wrap;
+  }
+  .modal-form {
+    height: 100%;
   }
 }
 
@@ -726,6 +782,28 @@ input {
   }
   .feedback-form__call img {
     margin: 10px auto;
+  }
+  .modal-wrap {
+    padding-bottom: 0;
+    padding-top: 70px;
+    max-width: 320px;
+    height: 500px;
+  }
+  .modal-description {
+    display: none;
+  }
+  .modal-description__block:first-child {
+    margin-top: 15px;
+  }
+  .modal-form {
+    margin: 0;
+    padding: 0;
+  }
+  .modal-form__feedback {
+    margin: 0;
+  }
+  .modal-form__feedback-tel {
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

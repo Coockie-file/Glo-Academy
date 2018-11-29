@@ -9,7 +9,7 @@
         background-color: #ffffff
 @media (max-width: 992px)
   .container
-    width: 768px
+    max-width: 768px
   .subheader
     &-text
       & h1
@@ -19,6 +19,25 @@
         & span
           font-size: 18px
           line-height: 20px
+  .modal
+    &-wrap
+      width: 768px
+    &-form
+      &__headline
+        & h1
+          margin-bottom: 15px
+          font-size: 25px
+        & h3
+          margin-bottom: 25px
+      &__input
+        max-width: 240px
+        padding: 15px
+        margin: 0 auto
+      &__button
+        max-width: 240px
+        margin: 0 auto
+    &-description
+      padding: 40px 45px 35px 40px
   .feedback
     background-size: cover
     background-position: center
@@ -26,9 +45,12 @@
     &::before
       content: ''
       width: 0%
+    &-form
+      &__input
+      max-width: 230px
 @media (max-width: 768px)
   .container
-    width: 576px
+    max-width: 576px
   .second
     flex-flow: column nowrap
   .subheader
@@ -48,6 +70,22 @@
       & img
         border: 2px solid gray
         background-color: gray
+  .modal
+    &-wrap
+      width: 576px
+      display: flex
+      flex-flow: column nowrap
+      min-height: 100vh
+    &-description
+      order: 1
+      width: 100%
+      height: 100%
+      padding-left: 130px
+      &__block
+        display: flex
+        flex-flow: row  wrap
+    &-form
+      height: 100%      
 @media (max-width: 576px)
   .container
     width: 320px
@@ -90,6 +128,24 @@
         text-align: center
         & img
           margin: 10px auto
+  .modal
+    &-wrap
+      padding-bottom: 0
+      padding-top: 70px
+      max-width: 320px
+      height: 500px
+    &-description
+      display: none
+      &__block
+        &:first-child
+          margin-top: 15px
+    &-form
+      margin: 0
+      padding: 0
+      &__feedback
+        margin: 0
+        &-tel
+          margin-bottom: 0
           
  
     
