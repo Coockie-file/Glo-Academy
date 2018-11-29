@@ -7,7 +7,9 @@
   <title>Ремонт квартир</title>
   <link rel="stylesheet" href="normalize/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/slick.css">
 </head>
+
 <body>
 
   <div class="header">
@@ -104,6 +106,36 @@
     </div>
   </div>
 
+  <section class="portfolio">
+    <div class="portfolio-wrap">
+      <h1 class="section-title section-title__center">
+          Работая с 2007 года, <br>
+          мы сделали более 500 ремонтов в квартирах и домах
+      </h1>
+      <div class="slider">
+        <div class="slider-item">
+          <img src="Imgs/slider/slide_1.jpg" alt="">
+        </div>
+        <div class="slider-item">
+          <img src="Imgs/slider/slide_2.jpg" alt="">
+        </div>
+        <div class="slider-item">
+          <img src="Imgs/slider/slide_3.jpg" alt="">
+        </div>
+        <div class="slider-item">
+          <img src="Imgs/slider/slide_1.jpg" alt="">
+        </div>
+        <div class="slider-item">
+          <img src="Imgs/slider/slide_2.jpg" alt="">
+        </div>
+        <div class="slider-item">
+          <img src="Imgs/slider/slide_3.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------MODAL-WINDOWS--------MODAL-WINDOW----------MODAL-WINDOW------>
   <div class="modal">
     <div class="modal-wrap">
       <div class="modal-description">
@@ -158,8 +190,6 @@
           </div>
       </div>
 
-      
-      
       <div class="modal-form">
         <div class="modal-form__headline">
           <h1>Узнайте точную стоимость <br>
@@ -180,15 +210,48 @@
       </div>
     </div>
   </div>
+ <!------MODAL-WINDOW--------MODAL-WINDOW----------MODAL-WINDOW------>
 
+
+ <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+ <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+ <script src="slick.min.js"></script>
+ <script src="JS/modal.js"></script>
+ 
 <script>
-  document.querySelector('.button-callback').addEventListener('click', function(){
-    document.querySelector('.modal').classList.toggle('modal-visible');
+$(document).ready(function(){
+  $('.slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    nextArrow: '<div class="arrow arrow-right"></div>',
+    prevArrow: '<div class="arrow arrow-left"></div>',
+    responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
   });
-  document.querySelector('.modal').addEventListener('click', function(){
-    document.querySelector('.modal').classList.toggle('modal-visible')
-  })
+});
 </script>
+
 
 </body>
 </html>
