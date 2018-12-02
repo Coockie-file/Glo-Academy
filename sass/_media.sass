@@ -11,6 +11,9 @@
   &-item
     & img
       max-width: 95%
+.request
+  background-image: none
+  background-color: rgba(0, 0, 0, .1)
 @media (max-width: 992px)
   .container
     max-width: 768px
@@ -55,6 +58,23 @@
   .portfolio
     h1
       font-size: 25px
+  .repair
+    &-headline
+      &__title
+        font-size: 16px
+    &-blocks
+      justify-content: center
+    &-items
+      flex-wrap: wrap
+      justify-content: space-around
+      &__arrow
+        display: none
+  .suggestion
+    &-blocks
+      flex-flow: column nowrap
+      align-items: center
+      justify-content: flex-start
+      margin: 120px auto
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -97,6 +117,26 @@
     &-headline
       max-width: 400px
       margin: auto
+  .repair
+    &-headline
+      &__title
+        font-size: 13px
+        line-height: 2em
+  .documents
+    &-headline
+      &__title
+        font-size: 13px
+    &-blocks
+      flex-flow: column nowrap
+      justify-content: center
+      &__block
+        margin: 15px auto
+  .request
+    & .container
+      flex-flow: column nowrap
+    & .description
+      margin: 0 auto
+      margin-top: 150px
 @media (max-width: 576px)
   .container
     width: 320px

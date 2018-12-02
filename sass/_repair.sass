@@ -1,0 +1,92 @@
+.repair
+  & .container
+    margin-top: 100px
+    flex-flow: column nowrap
+    justify-content: space-around
+  &-headline
+    &__title
+      margin-bottom: 58px
+      color: $black
+      font:
+        family: $msb
+        size: 30px
+        weight: 400
+      line-height: 75px
+      text-align: center
+    &__subtitle
+      color: $black
+      font:
+        family: $msl
+        size: 20px
+        weight: 400
+      line-height: 45px
+      text-align: center
+  &-blocks
+    +display
+    flex-flow: row wrap
+    &__item
+      margin-bottom: 30px
+      text-align: center
+      &-legend
+        color: $black
+        font:
+          family: $msl
+          size: 18px
+          weight: 400
+        line-height: 45px
+        & span
+          color: $lightgray
+            family: $msb
+            size: 16px
+            weight: 400
+          line-height: 18px
+        &-line
+          width: 96px
+          height: 3px
+          margin: 0 auto
+          margin-top: -26px
+          background-color: #ffd200
+      &:hover
+        .repair-blocks__item-image
+          background-image: linear-gradient(to top , #ffd200 )
+          opacity: 0.8
+        .repair-blocks__item-legend-line
+          margin-top: -40px
+          height: 13px
+  .second-headline
+    margin-top: 138px
+    margin-bottom: 60px
+  &-items
+    +display
+    &__item
+      min-height: 188px
+      margin-bottom: 97px
+      &-figure
+        +display
+        flex-flow: column nowrap
+        justify-content: center
+        align-items: center
+        &-image 
+          +display
+          justify-content: center
+          align-items: center
+          width: 100px
+          height: 100px
+          padding: 33px 33px
+          border-radius: 50%
+          border: 3px solid $primary-color
+          & img
+            max-width: 35px
+            height: 35px 
+        &-legend
+          max-width: 155px
+          color: $black
+          font:
+            family: $msl
+            size: 14px
+            weight: 400
+          line-height: 20px
+          text-align: center
+    &__arrow
+      align-self: flex-start
+            

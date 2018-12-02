@@ -1,0 +1,37 @@
+.documents
+  & .container
+    flex-flow: column nowrap
+  &-headline
+    max-width: 750px
+    margin-bottom: 99px
+    text-align: center
+    &__title
+      color: $black
+      font:
+        family: $msl
+        size: 18px
+        weight: 400
+      line-height: 55px
+  &-blocks
+    +display
+    justify-content: space-around
+    margin-bottom: 228px
+    &__block
+      min-width: 286px
+      min-height: 467px
+      margin-right: 130px
+      &:last-child
+        margin-right: 0
+      &-image
+        margin-bottom: 41px
+        padding: 25px
+        background-color: $modal-background
+        text-align: center
+      &-legend
+        color: $black
+        font:
+          family: $msl
+          size: 18px
+          weight: 400
+        line-height: 24px
+        text-align: center

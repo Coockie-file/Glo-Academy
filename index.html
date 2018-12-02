@@ -85,13 +85,11 @@
           </h1>
         </div>
 
-        <div class="feedback-form__input">
-          <input type="name" placeholder="Ваше имя">
-          <input type="tel"  pattern="" placeholder="Ваш телефон"> 
-        </div>
-        <div class="feedback-form__button">
-          <button type="submit">Получить бесплатный дизайн-проект</button>
-        </div>
+        <form class="feedback-form__input" action="mailer.php" method="POST" id="js-ajax">
+          <input type="name" name="user_name" placeholder="Ваше имя" required>
+          <input type="tel"  name="user_phone"  placeholder="Ваш телефон" required> 
+          <button class="feedback-form__input-button" type="submit">Получить бесплатный дизайн-проект</button>
+        </form>
 
         <div class="feedback-form__call">
          
@@ -134,6 +132,341 @@
       </div>
     </div>
   </section>
+  
+  <div class="repair">
+    <div class="container">
+      <div class="headline">
+        <div class="repair-headline__title">
+          <h1>У нас очень гибкая система скидок
+            на комплексные работы!</h1>
+        </div>
+        <div class="repair-headline__subtitle">
+          <h3>Прайс на наши услуги</h3>
+        </div>
+      </div>
+
+      <div class="repair-blocks">
+        <div class="repair-blocks__item">
+          <div class="repair-blocks__item-image">
+            <img  src="Imgs/repair/first.jpg" alt="">
+          </div>
+          <div class="repair-blocks__item-legend">
+            <p>Ремонт ванных комнат и с/у
+              <br>
+              <span>Узнать цены</span>
+            </p>
+          </div>
+          <div class="repair-blocks__item-legend-line"></div>
+        </div>
+  
+        <div class="repair-blocks__item">
+          <div class="repair-blocks__item-image">
+            <img  src="Imgs/repair/second.jpg" alt="">
+          </div>
+          <div class="repair-blocks__item-legend">
+            <p> Ремонт комнат и квартир
+              <br>
+              <span>Узнать цены</span>
+            </p>
+          </div>
+          <div class="repair-blocks__item-legend-line"></div>
+        </div>
+  
+        <div class="repair-blocks__item">
+          <div class="repair-blocks__item-image">
+            <img src="Imgs/repair/third.jpg" alt="">
+          </div>
+          <div class="repair-blocks__item-legend">
+            <p>Отделка офисных помещений
+              <br>
+              <span>Узнать цены</span>
+            </p>
+          </div>
+          <div class="repair-blocks__item-legend-line"></div>
+        </div>
+  
+        <div class="repair-blocks__item">
+          <div class="repair-blocks__item-image">
+            <img  src="Imgs/repair/fourth.jpg" alt="">
+          </div>
+          <div class="repair-blocks__item-legend">
+            <p>Ремонт в новостройках
+              <br>
+              <span>Узнать цены</span>
+            </p>
+          </div>
+          <div class="repair-blocks__item-legend-line"></div>
+        </div>
+  
+        <div class="repair-blocks__item">
+          <div class="repair-blocks__item-image" >
+            <img src="Imgs/repair/fifth.jpg" alt="">
+          </div>
+          <div class="repair-blocks__item-legend">
+            <p>Ремонт кухонь
+              <br>
+              <span>Узнать цены</span>
+            </p>
+          </div>
+          <div class="repair-blocks__item-legend-line"></div>
+        </div>
+  
+        <div class="repair-blocks__item">
+          <div class="repair-blocks__item-image" >
+            <img src="Imgs/repair/sixth.jpg" alt="">
+          </div>
+          <div class="repair-blocks__item-legend">
+            <p>Ремонт дач и коттеджей
+              <br>
+              <span>Узнать цены</span>
+            </p>
+          </div>
+          <div class="repair-blocks__item-legend-line"></div>
+        </div>
+      </div>
+      
+      <div class="headline second-headline">
+        <div class="repair-headline__title">
+          <h1>Наши специалисты готовы выехать на замер
+            в любое удобное для Вас время</h1>
+        </div>
+        <div class="repair-headline__subtitle">
+          <h3>5 шагов до ремонта</h3>
+        </div>
+      </div>
+
+      <div class="repair-items">
+
+        <div class="repair-items__item">
+          <div class="repair-items__item-figure">
+            <div class="repair-items__item-figure-image">
+                <img src="Imgs/repair/face.png" alt="">
+            </div>
+            <div class="repair-items__item-figure-legend">
+              <p>Вы звоните нам
+                  или оставляете заявку</p>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="repair-items__arrow">
+          <img src="Imgs/repair/arrow.png" alt="">
+        </div>
+
+        <div class="repair-items__item">
+          <div class="repair-items__item-figure">
+            <div class="repair-items__item-figure-image">
+                <img src="Imgs/repair/clock.png" alt="">
+            </div>
+            <div class="repair-items__item-figure-legend">
+              <p>Согласуем удобное
+                  для Вас время выезда 
+                  специалиста на замер
+                  </p>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="repair-items__arrow">
+          <img src="Imgs/repair/arrow.png" alt="">
+        </div>
+
+        <div class="repair-items__item">
+          <div class="repair-items__item-figure">
+            <div class="repair-items__item-figure-image">
+                <img src="Imgs/repair/money.png" alt="">
+            </div>
+            <div class="repair-items__item-figure-legend">
+              <p>Рассчитываем смету
+                  согласовываем
+                  с Вами</p>
+            </div>
+          </div>    
+        </div>
+
+        <div class="repair-items__arrow">
+          <img src="Imgs/repair/arrow.png" alt="">
+        </div>
+
+        <div class="repair-items__item">
+            <div class="repair-items__item-figure">
+              <div class="repair-items__item-figure-image">
+                  <img src="Imgs/repair/paper.png" alt="">
+              </div>
+              <div class="repair-items__item-figure-legend">
+                <p>Подписываем договор
+                    закупаем материал
+                    по оптовым ценам</p>
+            </div>
+        </div>
+      </div> 
+     
+
+        <div class="repair-items__arrow">
+          <img src="Imgs/repair/arrow.png" alt="">
+        </div>
+
+        <div class="repair-items__item">
+          <div class="repair-items__item-figure">
+            <div class="repair-items__item-figure-image">
+                <img src="Imgs/repair/timer.png" alt="">
+            </div>
+            <div class="repair-items__item-figure-legend">
+              <p>Выполняем ремонт
+                  в указанные сроки</p>
+            </div>
+          </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <div class="statement">
+    <div class="container">
+      <div class="statement-title">
+        <h1>Ремонт обойдется Вам дешевле, так как 
+          мы используем качественные материалы по оптовым ценам
+        </h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="suggestion">
+    <div class="container">
+      <div class="suggestion-blocks">
+        <div class="suggestion-blocks__block">
+          <div class="suggestion-blocks__block-headline">Поможем закупить все материалы 
+            по оптовым ценам у проверенных поставщиков</div>
+          <div class="suggestion-blocks__block-image-1">
+        </div>
+      </div>
+
+        <div class="suggestion-blocks__block">
+          <div class="suggestion-blocks__block-headline">Мы дадим Вам <strong>максимальные скидки</strong>
+            у наших партнеров для закупки материалов оптом</div>
+          <div class="suggestion-blocks__block-image-2"> 
+          </div>
+        </div>
+
+        <div class="suggestion-blocks__block">
+          <div class="suggestion-blocks__block-headline">Все, что не сможете найти в городе -
+            поможем заказать <strong>у проверенных
+              поставщиков</strong></div>
+          <div class="suggestion-blocks__block-image-3"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="documents">
+    <div class="container">
+      <div class="documents-headline">
+        <div class="documents-headline__title">
+          <h1>Все наши гарантийные обязательства
+              подробно и прозрачно описаны в договоре</h1>
+        </div>
+      </div>
+
+      <div class="documents-blocks">
+
+        <div class="documents-blocks__block">
+          <div class="documents-blocks__block-image">
+            <img src="Imgs/repair/first-d.jpg" alt="">
+          </div>
+          <div class="documents-blocks__block-legend">Гарантия на качество
+              выполняемых работ</div>
+        </div>
+
+        <div class="documents-blocks__block">
+          <div class="documents-blocks__block-image">
+            <img src="Imgs/repair/second-d.jpg" alt="">
+          </div>
+          <div class="documents-blocks__block-legend">Гарантия на фиксированные цены.
+              Виды работ и цены на них 
+              прописаны в договоре
+              </div>
+        </div>
+
+
+        <div class="documents-blocks__block">
+          <div class="documents-blocks__block-image">
+            <img src="Imgs/repair/third-d.jpg" alt="">
+          </div>
+          <div class="documents-blocks__block-legend">Гарантия на точное соблюдение 
+              сроков и ответственность за 
+              их невыполнение
+              </div>
+        </div>
+
+    </div>
+  </div>
+
+  <div class="request">
+    <div class="container">
+      <div class="description">
+        <div class="description-headline">
+          <div class="description-headline__title">
+            <h1>Мы можем озвучить Вам примерную стоимость
+                работы и материалов по телефону</h1>
+          </div>
+          <div class="description-headline__subtitle">
+            <h3>Для этого нужно ответить на 4 вопроса:</h3>
+          </div>
+        </div>
+
+        <div class="description-list">
+
+          <div class="description-list__line">
+            <div class="description-list__line-number">1.</div>
+            <div class="description-list__line-text">Какова площадь помещения?</div>
+          </div>
+
+          <div class="description-list__line">
+            <div class="description-list__line-number">2.</div>
+            <div class="description-list__line-text">У Вас новостройка или вторичное жилье?</div>
+          </div>
+
+          <div class="description-list__line">
+            <div class="description-list__line-number">3.</div>
+            <div class="description-list__line-text">Где находится помещение, в котором будет 
+                производиться ремонт? </div>
+          </div>
+
+          <div class="description-list__line">
+            <div class="description-list__line-number">4.</div>
+            <div class="description-list__line-text">Назначение помещения?</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="form">
+        <div class="form-headline">
+          <div class="form-headline__title">
+            <h1>Оставьте заявку на бесплатный 
+                расчет ремонта по телефону</h1>
+          </div>
+          <div class="form-headline__subtitle">
+            <h3>Для этого заполните форму ниже</h3>
+          </div>
+        </div>
+
+        <form class="form-input" action="mailer/smart.php" metod="POST">
+          <input type="text" name="user_name"placeholder="Ваше имя">
+          <input type="tel" name="user_phone"placeholder="Ваш телефон">
+          <button type="submit">Рассчитать стоимость</button>
+        </form>
+
+        <div class="form-comm">
+            Мы перезвоним Вам в течение 60 секунд
+        </div>
+      </div>
+    </div>
+  </div>
+ 
 
   <!------MODAL-WINDOWS--------MODAL-WINDOW----------MODAL-WINDOW------>
   <div class="modal">
@@ -196,13 +529,13 @@
               ремонта по телефону!</h1>
           <h3>Заполните поля ниже - мы свяжемся с Вами</h3>
         </div>
-        <div class="modal-form__input">
-          <input type="text" placeholder="Ваше имя">
-          <input type="tel" placeholder="Ваш телефон">
-        </div>
-        <div class="modal-form__button">
-          <button type="submit">Узнать стоимость</button>
-        </div>
+
+        <form class="modal-form__input" action="mailer/smart.php" method="POST">
+          <input type="text" name="user_name" placeholder="Ваше имя">
+          <input type="tel" name="user_phone" placeholder="Ваш телефон">
+          <button class="modal-form__input-button" type="submit">Узнать стоимость</button>
+        </form>
+        
         <div class="modal-form__feedback">
           <div class="modal-form__feedback-callus">Или Вы можете перезвонить нам сами по телефону:</div>
           <div class="modal-form__feedback-tel">+7 (8182) 42-51-31</div>
@@ -216,10 +549,13 @@
  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
  <script src="slick.min.js"></script>
- <script src="JS/modal.js"></script>
+ 
  
 <script>
 $(document).ready(function(){
+  $('.button-callback').on('click', function() {
+    $('.modal').addClass('modal-visible')
+  });
   $('.slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -248,6 +584,20 @@ $(document).ready(function(){
       }
     }
   ]
+  });
+  $('#js-ajax').on('submit',function(){
+    var user_nameVal = $('[name = user_name]').val();
+        user_phoneVal = $('[name = user_phone]').val();
+    
+    $.ajax({
+      url: 'mailer/smart.php',
+      data: {user_name:user_nameVal, user_phone:user_phoneVal},
+      success: function(){
+        alert('Load was performed');
+      }
+    });
+    
+    return false;
   });
 });
 </script>
