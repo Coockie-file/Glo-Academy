@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ремонт квартир</title>
   <link rel="stylesheet" href="normalize/normalize.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/slick.css">
 </head>
@@ -146,83 +147,78 @@
       </div>
 
       <div class="repair-blocks">
-        <div class="repair-blocks__item">
+        <div class="repair-blocks__item wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">
           <div class="repair-blocks__item-image">
             <img  src="Imgs/repair/first.jpg" alt="">
           </div>
           <div class="repair-blocks__item-legend">
             <p>Ремонт ванных комнат и с/у
               <br>
-              <span>Узнать цены</span>
+              <a href="#">Узнать цены</a>
             </p>
           </div>
-          <div class="repair-blocks__item-legend-line"></div>
         </div>
   
-        <div class="repair-blocks__item">
+        <div class="repair-blocks__item wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">
           <div class="repair-blocks__item-image">
             <img  src="Imgs/repair/second.jpg" alt="">
           </div>
           <div class="repair-blocks__item-legend">
             <p> Ремонт комнат и квартир
               <br>
-              <span>Узнать цены</span>
+              <a href="#">Узнать цены</a>
             </p>
           </div>
-          <div class="repair-blocks__item-legend-line"></div>
         </div>
   
-        <div class="repair-blocks__item">
+        <div class="repair-blocks__item wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.8s">
           <div class="repair-blocks__item-image">
             <img src="Imgs/repair/third.jpg" alt="">
           </div>
           <div class="repair-blocks__item-legend">
             <p>Отделка офисных помещений
               <br>
-              <span>Узнать цены</span>
+              <a href="#">Узнать цены</a>
             </p>
           </div>
-          <div class="repair-blocks__item-legend-line"></div>
         </div>
   
-        <div class="repair-blocks__item">
+        <div class="repair-blocks__item wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">
           <div class="repair-blocks__item-image">
             <img  src="Imgs/repair/fourth.jpg" alt="">
           </div>
           <div class="repair-blocks__item-legend">
             <p>Ремонт в новостройках
               <br>
-              <span>Узнать цены</span>
+              <a href="#">Узнать цены</a>
             </p>
           </div>
-          <div class="repair-blocks__item-legend-line"></div>
         </div>
   
-        <div class="repair-blocks__item">
+        <div class="repair-blocks__item wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">
           <div class="repair-blocks__item-image" >
             <img src="Imgs/repair/fifth.jpg" alt="">
           </div>
           <div class="repair-blocks__item-legend">
             <p>Ремонт кухонь
               <br>
-              <span>Узнать цены</span>
+              <a href="#">Узнать цены</a>
             </p>
           </div>
-          <div class="repair-blocks__item-legend-line"></div>
         </div>
   
-        <div class="repair-blocks__item">
+        <div class="repair-blocks__item wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.8s">
           <div class="repair-blocks__item-image" >
             <img src="Imgs/repair/sixth.jpg" alt="">
           </div>
           <div class="repair-blocks__item-legend">
             <p>Ремонт дач и коттеджей
               <br>
-              <span>Узнать цены</span>
+              <a href="#">Узнать цены</a>
             </p>
           </div>
-          <div class="repair-blocks__item-legend-line"></div>
         </div>
+
       </div>
       
       <div class="headline second-headline">
@@ -548,6 +544,7 @@
 
  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+ <script src="wow/wow.min.js"></script>
  <script src="slick.min.js"></script>
  
  
@@ -600,6 +597,9 @@ $(document).ready(function(){
     return false;
   });
 });
+</script>
+<script>
+  new WOW().init();
 </script>
 
 

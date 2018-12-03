@@ -27,32 +27,53 @@
     &__item
       margin-bottom: 30px
       text-align: center
+      transition: all 0.3s
+      &-image
+        position: relative
+        &::after
+          content: ''
+          width: 100%
+          height: 98.8%
+          position: absolute
+          left: 0
+          top: 0
+          background-image: linear-gradient(to top, $primary-color 0%, rgba(255, 255, 255, 0) 100%)
+          opacity: 0
+          transition: all 0.3s
       &-legend
+        margin-bottom: 47px
         color: $black
         font:
           family: $msl
           size: 18px
           weight: 400
         line-height: 45px
-        & span
+        & a
+          position: relative
           color: $lightgray
             family: $msb
             size: 16px
             weight: 400
           line-height: 18px
-        &-line
-          width: 96px
-          height: 3px
-          margin: 0 auto
-          margin-top: -26px
-          background-color: #ffd200
+          text-decoration: none
+          &::after
+            content: ''
+            position: absolute
+            left: 0.01%
+            bottom: -3px
+            display: block
+            width: 100%
+            height: 3px
+            background-color: $primary-color
+            transition: all 0.3s
+          &:hover
+            &::after
+              height: 13px
+              z-index: -1
       &:hover
-        .repair-blocks__item-image
-          background-image: linear-gradient(to top , #ffd200 )
+        box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2)
+        & > .repair-blocks__item-image::after
           opacity: 0.8
-        .repair-blocks__item-legend-line
-          margin-top: -40px
-          height: 13px
   .second-headline
     margin-top: 138px
     margin-bottom: 60px
