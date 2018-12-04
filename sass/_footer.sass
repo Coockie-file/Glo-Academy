@@ -1,0 +1,50 @@
+.footer
+  display: flex
+  justify-content: center
+  &-maps
+    flex-basis: 55%
+    min-height: 640px
+  &-contacts
+    padding: 70px
+    flex-basis: 45%
+    &__title
+      margin-bottom: 40px
+      color: $black
+      font:
+        family: $msb
+        size: 17px
+        weight: 400
+    &__adress
+      +footer
+      &-icon
+        width: 14px 
+        height: 20px
+        margin-right: 25px
+        background-image: url('../Imgs/footer/first-icon.png')
+      &-text
+        +footer-text
+        & strong
+          font-family: $msb
+    &__shedule
+      +footer
+      &-icon
+        width: 20px
+        height: 20px
+        margin-right: 25px
+        background-image: url('../Imgs/footer/second-icon.png')
+      &-text
+        +footer-text
+        & strong
+          font-family: $msb
+    &__phone
+      +footer
+      &-icon
+        width: 20px
+        height: 20px
+        margin-right: 25px
+        background-image: url('../Imgs/footer/third-icon.png')
+      &-text
+        +footer-text
+        & strong
+          font-family: $msb
+
