@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/slick.css">
+  <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter51436135 = new Ya.Metrika2({ id:51436135, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/51436135" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 </head>
 
 <body>
@@ -25,7 +26,7 @@
           <span>Калуга, Москва, МО</span> <br>
           <a href="tel:+74954225131">+7 (495) 42-251-31</a>
         </div>
-        <div class="header-text__callme button-callback">
+        <div class="header-text__callme button-callback" id="button-callback">
           <button>Перезвоните <span class="me">мне</span></button>
         </div>
       </div>
@@ -643,6 +644,12 @@ $(document).ready(function(){
 </script>
 <script>
   new WOW().init();
+</script>
+
+<script>
+  document.querySelector('#callback-button').addEventListener('click', function(){
+    yaCounter51436135.reachGoal('button-click'); return true;
+  })
 </script>
 
 
