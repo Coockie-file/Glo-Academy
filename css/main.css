@@ -558,11 +558,8 @@
   background-color: #ffd200;
 }
 
-.statement .container {
-  padding: 100px 0;
-}
-
 .statement-title {
+  margin: 100px auto;
   color: #000000;
   font-family: "Museo Sans Light";
   font-size: 20px;
@@ -713,7 +710,8 @@
 
 .request .description {
   padding-right: 100px;
-  width: 515px;
+  -ms-flex-preferred-size: 515px;
+      flex-basis: 515px;
 }
 
 .request .description-headline {
@@ -780,7 +778,8 @@
 
 .request .form {
   padding-bottom: 93px;
-  width: 400px;
+  -ms-flex-preferred-size: 400px;
+      flex-basis: 400px;
 }
 
 .request .form-headline {
@@ -1506,6 +1505,15 @@ input {
   .request .description {
     margin: 0 auto;
     margin-top: 150px;
+  }
+  .statement-title {
+    margin: 30px auto;
+    font-size: 13px;
+  }
+  .request .description-headline__title {
+    min-width: 300px;
+    font-size: 10px;
+    text-align: center;
   }
 }
 
