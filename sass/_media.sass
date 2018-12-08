@@ -11,9 +11,6 @@
   &-item
     & img
       max-width: 95%
-.request
-  background-image: none
-  background-color: rgba(0, 0, 0, .1)
 @media (max-width: 992px)
   .container
     max-width: 768px
@@ -75,9 +72,15 @@
       align-items: center
       justify-content: flex-start
       margin: 120px auto
+  .request
+    background-image: none
+    background-color: rgba(0, 0, 0, .1)
+    &-description
+      margin-top: 0
   .footer
     flex-flow: column nowrap
     &-map
+      order: -1
       flex-basis: 100%
     &-contacts
       flex-basis: 100%
@@ -126,12 +129,12 @@
   .repair
     &-headline
       &__title
-        font-size: 13px
+        font-size: 25px
         line-height: 2em
   .documents
     &-headline
       &__title
-        font-size: 13px
+        font-size: 18px
     &-blocks
       flex-flow: column nowrap
       justify-content: center
@@ -142,7 +145,7 @@
       flex-flow: column nowrap
     & .description
       margin: 0 auto
-      margin-top: 150px
+      margin-top: 30px
   .statement
     &-title
       margin: 30px auto
@@ -152,7 +155,7 @@
       &-headline
         &__title
           min-width: 300px
-          font-size: 10px
+          font-size: 20px
           text-align: center
 @media (max-width: 576px)
   .container

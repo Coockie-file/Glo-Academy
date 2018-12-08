@@ -1,23 +1,28 @@
 .request 
-  background: url('../Imgs/form/background.jpg') repeat-y  120%
+  background: url('../Imgs/form/background.jpg') no-repeat   140%
   background-color: $primary-color
+  max-height: 660px
+  &::after
+    margin-right: 50px
   & .container
     +display
+    justify-content: space-around
+    align-items: baseline
+    height: 100%  
   & .description
-    padding-right: 100px
     flex-basis: 515px
     &-headline
-      margin-top: -70px
       &__title
+        margin-bottom: 50px
         color: $black
         font:
           family: $msb
-          size: 13px
+          size: 22px
           weight: 400
-        line-height: 45px
+        line-height: 33px
       &__subtitle
+        margin-bottom: 100px
         color: $black
-        font:
         font:
           family: $msl
           size: 16px
@@ -52,16 +57,16 @@
     padding-bottom: 93px
     flex-basis: 400px
     &-headline
-      margin-top: 103px
+      padding-top: 103px
       text-align: center
       &__title
         margin-bottom: 52px
         color: $lightgray
         font:
           family: $msb
-          size: 13px
+          size: 22px
           weight: 400
-        line-height: 45px
+        line-height: 33px
       &__subtitle
         margin-bottom: 49px
         color: $lightgray
@@ -75,6 +80,7 @@
       flex-flow: column nowrap
       & input
         width: 100%
+        height: 65px
         margin-bottom: 15px
         padding: 26px
         color: $input-color
@@ -87,8 +93,9 @@
           margin-bottom: 30px
       & button
         width: 100%
-        margin-bottom: 23px
-        padding: 28px 
+        height: 60px
+        margin-bottom: 33px
+        padding: 15px 
         color: $lightgray
         font:
           family: $msb

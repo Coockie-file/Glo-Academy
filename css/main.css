@@ -304,6 +304,7 @@
 }
 
 .slider {
+  margin-top: 99px;
   margin-bottom: 100px;
 }
 
@@ -344,7 +345,7 @@
 }
 
 .repair .container {
-  margin-top: 100px;
+  padding-top: 100px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
@@ -354,16 +355,18 @@
 }
 
 .repair-headline__title {
-  margin-bottom: 58px;
+  max-width: 515px;
   color: #000000;
   font-family: "Museo Sans Bold";
   font-size: 30px;
   font-weight: 400;
-  line-height: 75px;
+  line-height: 45px;
   text-align: center;
 }
 
 .repair-headline__subtitle {
+  margin-top: 58px;
+  margin-bottom: 59px;
   color: #000000;
   font-family: "Museo Sans Light";
   font-size: 20px;
@@ -540,7 +543,8 @@
 }
 
 .repair-items__item-figure-legend {
-  max-width: 155px;
+  max-width: 151px;
+  margin-top: 30px;
   color: #000000;
   font-family: "Museo Sans Light";
   font-size: 14px;
@@ -562,7 +566,7 @@
   margin: 100px auto;
   color: #000000;
   font-family: "Museo Sans Light";
-  font-size: 20px;
+  font-size: 32px;
   font-weight: 400;
   line-height: 50px;
   text-align: center;
@@ -636,10 +640,10 @@
 
 .documents-headline__title {
   color: #000000;
-  font-family: "Museo Sans Light";
-  font-size: 18px;
+  font-family: "Museo Sans Bold";
+  font-size: 30px;
   font-weight: 400;
-  line-height: 55px;
+  line-height: 45px;
 }
 
 .documents-blocks {
@@ -688,8 +692,13 @@
 }
 
 .request {
-  background: url("../Imgs/form/background.jpg") repeat-y 120%;
+  background: url("../Imgs/form/background.jpg") no-repeat 140%;
   background-color: #ffd200;
+  max-height: 660px;
+}
+
+.request::after {
+  margin-right: 50px;
 }
 
 .request .container {
@@ -706,27 +715,30 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  height: 100%;
 }
 
 .request .description {
-  padding-right: 100px;
   -ms-flex-preferred-size: 515px;
       flex-basis: 515px;
 }
 
-.request .description-headline {
-  margin-top: -70px;
-}
-
 .request .description-headline__title {
+  margin-bottom: 50px;
   color: #000000;
   font-family: "Museo Sans Bold";
-  font-size: 13px;
+  font-size: 22px;
   font-weight: 400;
-  line-height: 45px;
+  line-height: 33px;
 }
 
 .request .description-headline__subtitle {
+  margin-bottom: 100px;
   color: #000000;
   font-family: "Museo Sans Light";
   font-size: 16px;
@@ -783,7 +795,7 @@
 }
 
 .request .form-headline {
-  margin-top: 103px;
+  padding-top: 103px;
   text-align: center;
 }
 
@@ -791,9 +803,9 @@
   margin-bottom: 52px;
   color: #333333;
   font-family: "Museo Sans Bold";
-  font-size: 13px;
+  font-size: 22px;
   font-weight: 400;
-  line-height: 45px;
+  line-height: 33px;
 }
 
 .request .form-headline__subtitle {
@@ -825,6 +837,7 @@
 
 .request .form-input input {
   width: 100%;
+  height: 65px;
   margin-bottom: 15px;
   padding: 26px;
   color: #999999;
@@ -840,8 +853,9 @@
 
 .request .form-input button {
   width: 100%;
-  margin-bottom: 23px;
-  padding: 28px;
+  height: 60px;
+  margin-bottom: 33px;
+  padding: 15px;
   color: #333333;
   font-family: "Museo Sans Bold";
   font-size: 16px;
@@ -869,6 +883,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-maps {
@@ -885,10 +902,12 @@
 
 .footer-contacts__title {
   margin-bottom: 40px;
+  width: 293px;
   color: #000000;
   font-family: "Museo Sans Bold";
-  font-size: 17px;
+  font-size: 22px;
   font-weight: 400;
+  line-height: 33px;
 }
 
 .footer-contacts__adress {
@@ -1308,11 +1327,6 @@ input {
   max-width: 95%;
 }
 
-.request {
-  background-image: none;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 @media (max-width: 992px) {
   .container {
     max-width: 768px;
@@ -1393,6 +1407,13 @@ input {
             justify-content: flex-start;
     margin: 120px auto;
   }
+  .request {
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .request-description {
+    margin-top: 0;
+  }
   .footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1400,6 +1421,9 @@ input {
             flex-flow: column nowrap;
   }
   .footer-map {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1478,11 +1502,11 @@ input {
     margin: auto;
   }
   .repair-headline__title {
-    font-size: 13px;
+    font-size: 25px;
     line-height: 2em;
   }
   .documents-headline__title {
-    font-size: 13px;
+    font-size: 18px;
   }
   .documents-blocks {
     -webkit-box-orient: vertical;
@@ -1504,7 +1528,7 @@ input {
   }
   .request .description {
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 30px;
   }
   .statement-title {
     margin: 30px auto;
@@ -1512,7 +1536,7 @@ input {
   }
   .request .description-headline__title {
     min-width: 300px;
-    font-size: 10px;
+    font-size: 20px;
     text-align: center;
   }
 }
