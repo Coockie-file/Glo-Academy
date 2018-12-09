@@ -12,6 +12,7 @@
     display: flex
   &-wrap
     +display
+    position: relative
     align-items: baseline
     width: $content-width
     max-height: 710px
@@ -141,3 +142,13 @@
           size: 24px
           weight: 400
         line-height: 24px
+.close
+  display: block
+  position: absolute
+  top: 15px
+  right: 15px
+  width: 16px
+  height: 16px
+  background-image: url('../Imgs/modal-windows/cancel.svg')
+  &:hover
+    cursor: pointer

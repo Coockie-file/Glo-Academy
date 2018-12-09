@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ремонт квартир</title>
+  <link rel="shortcut icon" type="image/png" href="Imgs/favicon.png">
   <link rel="stylesheet" href="reset/reset.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/main.css">
@@ -87,7 +88,7 @@
           </div>
         </div>
 
-        <form class="feedback-form__input" action="mailer.php" method="POST" id="js-ajax">
+        <form class="feedback-form__input" action="mail.php" method="POST" id="js-ajax">
           <input type="text" name="user_name" placeholder="Ваше имя" required>
           <input type="tel"  name="user_phone"  placeholder="Ваш телефон" required> 
           <button class="feedback-form__input-button" type="submit">Получить бесплатный дизайн-проект</button>
@@ -224,7 +225,7 @@
       
       <div class="headline second-headline">
         <div class="repair-headline__title">
-          <h1>Наши специалисты готовы выехать на замер
+          <h1>Наши специалисты готовы выехать на замер <br>
             в любое удобное для Вас время</h1>
         </div>
         <div class="repair-headline__subtitle">
@@ -469,6 +470,7 @@
   
   <div class="modal">
     <div class="modal-wrap">
+      <div class="close"></div>
       <div class="modal-description">
 
         <div class="modal-description__block">
@@ -528,7 +530,7 @@
           <h3>Заполните поля ниже - мы свяжемся с Вами</h3>
         </div>
 
-        <form class="modal-form__input" action="mailer/smart.php" method="POST">
+        <form class="modal-form__input" action="mail.php" method="POST" id="js-ajax">
           <input type="text" name="user_name" placeholder="Ваше имя">
           <input type="tel" name="user_phone" placeholder="Ваш телефон">
           <button class="modal-form__input-button" type="submit">Узнать стоимость</button>
@@ -596,7 +598,10 @@
 <script>
 $(document).ready(function(){
   $('.button-callback').on('click', function() {
-    $('.modal').addClass('modal-visible')
+    $('.modal').addClass('modal-visible');
+  $('.close').on('click', function(){
+    $('.modal').removeClass('modal-visible');
+  })
   });
   $('.slider').slick({
     slidesToShow: 3,

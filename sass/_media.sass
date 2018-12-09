@@ -7,10 +7,22 @@
         width: 80%
         margin-right: 400px
         background-color: #ffffff
-.slider
-  &-item
-    & img
-      max-width: 95%
+  .slider
+    &-item
+      & img
+        max-width: 95%
+  .suggestion
+    &-blocks
+      flex-flow: row wrap
+  .documents
+    &-blocks
+      flex-flow: row wrap
+      align-items: center
+      justify-content: center
+      max-width: 290px
+      &__block
+        margin-bottom: 30px
+        margin-right: 50px
 @media (max-width: 992px)
   .container
     max-width: 768px

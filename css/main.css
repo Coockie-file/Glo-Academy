@@ -355,7 +355,7 @@
 }
 
 .repair-headline__title {
-  max-width: 515px;
+  width: 750px;
   color: #000000;
   font-family: "Museo Sans Bold";
   font-size: 30px;
@@ -465,7 +465,7 @@
 }
 
 .repair .second-headline {
-  margin-top: 138px;
+  margin-top: 60px;
   margin-bottom: 60px;
 }
 
@@ -662,13 +662,17 @@
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   margin-bottom: 228px;
 }
 
 .documents-blocks__block {
-  min-width: 286px;
-  min-height: 467px;
-  margin-right: 130px;
+  max-width: 286px;
+  height: 467px;
+  margin: 0 auto;
+  margin-right: 70px;
 }
 
 .documents-blocks__block:last-child {
@@ -1050,6 +1054,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -1241,6 +1246,20 @@
   line-height: 24px;
 }
 
+.close {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../Imgs/modal-windows/cancel.svg");
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1321,10 +1340,32 @@ input {
     margin-right: 400px;
     background-color: #ffffff;
   }
-}
-
-.slider-item img {
-  max-width: 95%;
+  .slider-item img {
+    max-width: 95%;
+  }
+  .suggestion-blocks {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .documents-blocks {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 290px;
+  }
+  .documents-blocks__block {
+    margin-bottom: 30px;
+    margin-right: 50px;
+  }
 }
 
 @media (max-width: 992px) {
