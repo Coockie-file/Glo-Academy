@@ -409,7 +409,7 @@
       <div class="description">
         <div class="description-headline">
           <div class="description-headline__title">
-            <h1>Мы можем озвучить Вам примерную стоимость 
+            <h1>Мы можем озвучить Вам примерную стоимость <br>
                 работы и материалов по телефону</h1>
           </div>
           <div class="description-headline__subtitle">
@@ -443,6 +443,7 @@
       </div>
       
       <div class="form">
+        <div class="form-wrap">
         <div class="form-headline">
           <div class="form-headline__title">
             <h1>Оставьте заявку на бесплатный 
@@ -453,7 +454,7 @@
           </div>
         </div>
 
-        <form class="form-input" action="mailer/smart.php" method="POST">
+        <form class="form-input" action="mail.php" method="POST" id="js-ajax-second">
           <input type="text" name="user_name" placeholder="Ваше имя">
           <input type="tel" name="user_phone" placeholder="Ваш телефон">
           <button type="submit">Рассчитать стоимость</button>
@@ -464,6 +465,7 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
  
 
@@ -530,7 +532,7 @@
           <h3>Заполните поля ниже - мы свяжемся с Вами</h3>
         </div>
 
-        <form class="modal-form__input" action="mail.php" method="POST" id="js-ajax">
+        <form class="modal-form__input" action="mail.php" method="POST" id="js-ajax-modal">
           <input type="text" name="user_name" placeholder="Ваше имя">
           <input type="tel" name="user_phone" placeholder="Ваш телефон">
           <button class="modal-form__input-button" type="submit">Узнать стоимость</button>
@@ -550,7 +552,7 @@
     </div> 
     
     <div class="footer-contacts">
-
+      <div class="contacts-wrap">
       <div class="footer-contacts__title">
         <h1>Приезжайте к нам в гости!
           Проконсультируем Вас 
@@ -583,7 +585,7 @@
           </div>
         </div>
      
-    
+      </div>
     </div>
   </footer>
  
@@ -633,6 +635,34 @@ $(document).ready(function(){
   ]
   });
   $('#js-ajax').on('submit',function(){
+    var user_nameVal = $('[name = user_name]').val();
+        user_phoneVal = $('[name = user_phone]').val();
+    
+    $.ajax({
+      url: 'mailer/smart.php',
+      data: {user_name:user_nameVal, user_phone:user_phoneVal},
+      success: function(){
+        alert('Load was performed');
+      }
+    });
+    
+    return false;
+  });
+  $('#js-ajax-second').on('submit',function(){
+    var user_nameVal = $('[name = user_name]').val();
+        user_phoneVal = $('[name = user_phone]').val();
+    
+    $.ajax({
+      url: 'mailer/smart.php',
+      data: {user_name:user_nameVal, user_phone:user_phoneVal},
+      success: function(){
+        alert('Load was performed');
+      }
+    });
+    
+    return false;
+  });
+  $('#js-ajax-modal').on('submit',function(){
     var user_nameVal = $('[name = user_name]').val();
         user_phoneVal = $('[name = user_phone]').val();
     

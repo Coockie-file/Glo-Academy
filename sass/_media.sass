@@ -23,6 +23,9 @@
       &__block
         margin-bottom: 30px
         margin-right: 50px
+  .request
+    & .form
+      padding-left: 50px
 @media (max-width: 992px)
   .container
     max-width: 768px
@@ -35,6 +38,13 @@
         & span
           font-size: 18px
           line-height: 20px
+  .feedback
+    &-form
+      text-align: center
+      min-width: 100%
+      &__input
+        &-button
+          width: 75%
   .modal
     &-wrap
       width: 768px
@@ -67,12 +77,18 @@
   .portfolio
     h1
       font-size: 25px
+  .slider
+    margin-bottom: 30px
   .repair
-    &-headline
+    & .headline
+      margin-top: -50px
       &__title
         font-size: 16px
     &-blocks
       justify-content: center
+      margin-bottom: 30px
+      &__item
+        margin-right: 10px
     &-items
       flex-wrap: wrap
       justify-content: space-around
@@ -84,6 +100,15 @@
       align-items: center
       justify-content: flex-start
       margin: 120px auto
+      text-align: center
+      &__block
+        margin-bottom: 25px
+        box-shadow: 0 0 20px rgba($black, 0.1)
+  .documents
+    &-blocks
+      flex-flow: column nowrap
+      justify-content: center
+      align-items: center
   .request
     background-image: none
     background-color: rgba(0, 0, 0, .1)
@@ -92,10 +117,16 @@
   .footer
     flex-flow: column nowrap
     &-map
-      order: -1
       flex-basis: 100%
     &-contacts
+      order: -1
       flex-basis: 100%
+      align-self: center
+  .statement
+    &-title
+      margin-top: 10px
+      margin-bottom: 10px
+      font-size: 20px
 @media (max-width: 768px)
   .container
     max-width: 576px

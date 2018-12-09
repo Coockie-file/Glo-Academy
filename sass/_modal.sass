@@ -12,6 +12,7 @@
     display: flex
   &-wrap
     +display
+    justify-content: center
     position: relative
     align-items: baseline
     width: $content-width
@@ -22,7 +23,7 @@
     max-height: 710px
     display: flex
     flex-flow: column nowrap
-    padding: 80px 90px 70px 80px
+    padding: 80px 40px 70px 80px
     background-color: $modal-background
     text-align: left
     &__block
@@ -81,7 +82,7 @@
           list-style-image: url('../Imgs/modal windows/list-style.png')
           margin-left: -25px
   &-form
-    margin:  auto
+    margin:  auto 50px
     text-align: center
     &__headline
       & h1
