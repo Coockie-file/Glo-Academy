@@ -597,6 +597,10 @@
   margin-right: 30px;
 }
 
+.suggestion-blocks__block:last-child {
+  margin-right: 0;
+}
+
 .suggestion-blocks__block-headline {
   margin: 27px 85px 53px 25px;
   width: 259px;
@@ -1488,6 +1492,7 @@ input {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 30px;
   }
   .statement-title {
     margin-top: 10px;
@@ -1673,11 +1678,8 @@ input {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-flow: column nowrap;
-        flex-flow: column nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-flow: row nowrap;
+    justify-content: space-between;
     text-align: center;
   }
   .header-text__contacts {
@@ -1686,21 +1688,26 @@ input {
         -ms-flex-order: 1;
             order: 1;
     padding-left: 10px;
+    font-size: 10px;
   }
   .header-text__contacts a {
-    font-size: 16px;
+    font-size: 12px;
   }
   .header-text__callme {
     text-align: right;
+    font-size: 10px;
   }
   .header-text__callme .me {
     display: none;
   }
+  .header-text__callme button {
+    padding: 10px;
+  }
   .subheader-text {
-    width: 260px;
+    width: 90%;
   }
   .subheader-text h1 {
-    font-size: 20px;
+    font-size: 25px;
     line-height: 30px;
   }
   .subheader-text h1 span {
@@ -1715,6 +1722,9 @@ input {
   }
   .feedback-form input {
     display: block;
+    width: 100%;
+  }
+  .feedback-form button {
     width: 100%;
   }
   .feedback-form__call {
@@ -1737,6 +1747,23 @@ input {
   }
   .feedback-form__call img {
     margin: 10px auto;
+  }
+  .portfolio .section-title {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .statement-title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .documents-headline {
+    margin: 20px auto;
+  }
+  .documents-headline__title {
+    line-height: 25px;
+  }
+  .suggestion-blocks {
+    margin-bottom: 30px;
   }
   .modal-wrap {
     padding-bottom: 0;
@@ -1767,7 +1794,8 @@ input {
             align-items: flex-start;
   }
   .request .description-headline {
-    width: 100%;
+    margin: 10px auto;
+    width: 95%;
   }
   .request .description-headline__title {
     margin-top: 10px;
@@ -1787,6 +1815,19 @@ input {
   }
   .request .form-input button {
     padding-bottom: 28px;
+  }
+  .repair-headline {
+    width: 80%;
+  }
+  .repair-headline__title {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .repair-headline__subtitle {
+    margin: 15px auto;
+  }
+  .repair-items__item {
+    margin-bottom: 35px;
   }
 }
 /*# sourceMappingURL=main.css.map */
