@@ -405,68 +405,71 @@
  </div>
 
   <div class="request">
-    <div class="container">
-      <div class="description">
-        <div class="description-headline">
-          <div class="description-headline__title">
-            <h1>Мы можем озвучить Вам примерную стоимость <br>
-                работы и материалов по телефону</h1>
-          </div>
-          <div class="description-headline__subtitle">
-            <h3>Для этого нужно ответить на 4 вопроса:</h3>
-          </div>
+   <div class="description">
+     <div class="description-headline">
+
+       <div class="description-headline__title">
+         <h1>Мы можем озвучить Вам примерную стоимость <br> работы и материалов по телефону</h1>
+       </div>
+
+       <div class="description-headline__subtitle">
+         <h3>Для этого нужно ответить на 4 вопроса:</h3>
+       </div>
+
+     </div>
+
+     <div class="description-list">
+
+       <div class="description-list__item">
+         <div class="description-list__item-number">1.</div>
+         <div class="description-list__item-text">Какова площадь помещения?</div>
+       </div>
+
+       <div class="description-list__item">
+          <div class="description-list__item-number">2.</div>
+          <div class="description-list__item-text">У Вас новостройка или вторичное жилье?</div>
         </div>
 
-        <div class="description-list">
-
-          <div class="description-list__line">
-            <div class="description-list__line-number">1.</div>
-            <div class="description-list__line-text">Какова площадь помещения?</div>
-          </div>
-
-          <div class="description-list__line">
-            <div class="description-list__line-number">2.</div>
-            <div class="description-list__line-text">У Вас новостройка или вторичное жилье?</div>
-          </div>
-
-          <div class="description-list__line">
-            <div class="description-list__line-number">3.</div>
-            <div class="description-list__line-text">Где находится помещение, в котором будет 
-                производиться ремонт? </div>
-          </div>
-
-          <div class="description-list__line">
-            <div class="description-list__line-number">4.</div>
-            <div class="description-list__line-text">Назначение помещения?</div>
-          </div>
+        <div class="description-list__item">
+          <div class="description-list__item-number">3.</div>
+          <div class="description-list__item-text">Где находится помещение, в котором будет <br> производиться ремонт?</div>
         </div>
+
+        <div class="description-list__item">
+          <div class="description-list__item-number">4.</div>
+          <div class="description-list__item-text">Назначение помещения?</div>
+        </div>
+     </div>
+   </div>
+
+
+   <div class="form">
+
+    <div class="form-headline">
+
+      <div class="form-headline__title">
+        <h1>Оставьте заявку на бесплатный <br> расчет ремонта по телефону</h1>
       </div>
-      
-      <div class="form">
-        <div class="form-wrap">
-        <div class="form-headline">
-          <div class="form-headline__title">
-            <h1>Оставьте заявку на бесплатный 
-                расчет ремонта по телефону</h1>
-          </div>
-          <div class="form-headline__subtitle">
-            <h3>Для этого заполните форму ниже</h3>
-          </div>
-        </div>
 
-        <form class="form-input" action="mail.php" method="POST" id="js-ajax-second">
-          <input type="text" name="user_name" placeholder="Ваше имя">
-          <input type="tel" name="user_phone" placeholder="Ваш телефон">
-          <button type="submit">Рассчитать стоимость</button>
-        </form>
-
-        <div class="form-comm">
-            Мы перезвоним Вам в течение 60 секунд
-        </div>
+      <div class="form-headline__subtitle">
+        <h3>Для этого заполните форму ниже</h3>
       </div>
+
     </div>
+
+    <form class="form-input" action="mail.php" method="POST" id="js-ajax-second">
+        <input type="text" name="user_name" placeholder="Ваше имя" required>
+        <input type="tel" name="user_phone" placeholder="Ваш телефон" required>
+        <button class="modal-form__input-button" type="submit">Рассчитать стоимость</button>
+    </form>
+
+    <div class="form-comm">
+        Мы перезвоним Вам в течение 60 секунд
+    </div>
+
+   </div>
   </div>
-  </div>
+
  
 
   
@@ -552,14 +555,13 @@
     </div> 
     
     <div class="footer-contacts">
-      <div class="contacts-wrap">
       <div class="footer-contacts__title">
         <h1>Приезжайте к нам в гости!
           Проконсультируем Вас 
           по всем вопросам ремонта
           </h1>
       </div>
-
+      <div class="footer-wrap">
       <div class="footer-contacts__adress">
 
         <div class="footer-contacts__adress-icon"></div>
@@ -584,7 +586,6 @@
               <strong>+ 7 (495) 42-251-31</strong>
           </div>
         </div>
-     
       </div>
     </div>
   </footer>

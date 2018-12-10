@@ -24,8 +24,9 @@
         margin-bottom: 30px
         margin-right: 50px
   .request
+    max-height: 660px
     & .form
-      padding-left: 50px
+      padding: 110px 0
 @media (max-width: 992px)
   .container
     max-width: 768px
@@ -109,24 +110,21 @@
       flex-flow: column nowrap
       justify-content: center
       align-items: center
-  .request
-    background-image: none
-    background-color: rgba(0, 0, 0, .1)
-    &-description
-      margin-top: 0
-  .footer
-    flex-flow: column nowrap
-    &-map
-      flex-basis: 100%
-    &-contacts
-      order: -1
-      flex-basis: 100%
-      align-self: center
   .statement
     &-title
       margin-top: 10px
       margin-bottom: 10px
       font-size: 20px
+  .request
+    & .description
+      padding: 50px 
+    & .form
+      &-headline
+        &__title
+          margin-top: -20px
+      &-input
+        & button
+          padding-bottom: 48px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -183,23 +181,40 @@
       justify-content: center
       &__block
         margin: 15px auto
-  .request
-    & .container
-      flex-flow: column nowrap
-    & .description
-      margin: 0 auto
-      margin-top: 30px
   .statement
     &-title
       margin: 30px auto
       font-size: 13px
   .request
+    flex-flow: column nowrap
+    max-height: 100%
     & .description
+      align-items: center
+      width: 100%
       &-headline
-        &__title
-          min-width: 300px
-          font-size: 20px
-          text-align: center
+        text-align: center
+    & .form
+      padding: 50px 0
+      width: 100%
+  .footer
+    flex-flow: column nowrap
+    &-wrap
+      display: flex
+      flex-flow: row wrap
+      justify-content: space-around
+      margin: 0 auto
+      margin-top: 20px
+    &-maps
+      flex-basis: 100%
+    &-contacts
+      order: -1
+      flex-basis: 100%
+      padding: 0
+      &__title
+        margin: 0 auto
+        margin-top: 20px
+        width: 60%
+        text-align: center
 @media (max-width: 576px)
   .container
     width: 320px
@@ -260,6 +275,26 @@
         margin: 0
         &-tel
           margin-bottom: 0
+  .request
+    & .description
+      padding: 0
+      align-items: flex-start
+      &-headline
+        width: 100%
+        &__title
+          margin-top: 10px
+          font-size: 20px
+      &-list
+        margin-left: 15px
+    & .form
+      padding: 0
+      &-headline
+        margin-top: 25px
+      &-input
+        max-width: 80%  
+        & button
+          padding-bottom: 28px
+        
 
           
  

@@ -696,16 +696,6 @@
 }
 
 .request {
-  background: url("../Imgs/form/background.jpg") no-repeat 140%;
-  background-color: #ffd200;
-  max-height: 660px;
-}
-
-.request::after {
-  margin-right: 50px;
-}
-
-.request .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -719,17 +709,26 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  height: 100%;
 }
 
 .request .description {
-  -ms-flex-preferred-size: 515px;
-      flex-basis: 515px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+  background-color: #ffd200;
+  padding: 65px 0;
+  padding-left: 200px;
+  padding-right: 50px;
+  max-height: 660px;
 }
 
 .request .description-headline__title {
@@ -742,7 +741,7 @@
 }
 
 .request .description-headline__subtitle {
-  margin-bottom: 100px;
+  margin-bottom: 74px;
   color: #000000;
   font-family: "Museo Sans Light";
   font-size: 16px;
@@ -750,7 +749,7 @@
   line-height: 45px;
 }
 
-.request .description-list__line {
+.request .description-list__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -758,34 +757,24 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   margin-bottom: 26px;
 }
 
-.request .description-list__line-number {
-  margin-right: 32px;
-  height: 35px;
-  padding: 10px;
-  padding-top: -10px;
+.request .description-list__item-number {
+  margin-right: 30px;
+  padding: 8px 11px;
   border-radius: 50%;
   border: 2px solid #000000;
   color: #000000;
   font-family: "Museo Sans Bold";
   font-size: 14px;
   font-weight: 400;
-  text-align: center;
-  vertical-align: middle;
 }
 
-.request .description-list__line-text {
+.request .description-list__item-text {
   color: #000000;
   font-family: "Museo Sans Medium";
   font-size: 18px;
@@ -793,18 +782,29 @@
 }
 
 .request .form {
-  padding-bottom: 93px;
-  -ms-flex-preferred-size: 400px;
-      flex-basis: 400px;
-}
-
-.request .form-headline {
-  padding-top: 103px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  padding: 88px 0;
+  background-image: url("../Imgs/form/background.jpg");
   text-align: center;
+  max-height: 660px;
 }
 
 .request .form-headline__title {
-  margin-bottom: 52px;
+  margin-top: -20px;
   color: #333333;
   font-family: "Museo Sans Bold";
   font-size: 22px;
@@ -813,7 +813,8 @@
 }
 
 .request .form-headline__subtitle {
-  margin-bottom: 49px;
+  margin-top: 52px;
+  margin-bottom: 30px;
   color: #333333;
   font-family: "Museo Sans Light";
   font-size: 16px;
@@ -825,30 +826,20 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 370px;
 }
 
 .request .form-input input {
-  width: 100%;
   height: 65px;
   margin-bottom: 15px;
-  padding: 26px;
-  color: #999999;
-  font-family: "Museo Sans Light";
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
+  padding: 25px;
 }
 
 .request .form-input input:last-child {
@@ -856,10 +847,8 @@
 }
 
 .request .form-input button {
-  width: 100%;
-  height: 60px;
   margin-bottom: 33px;
-  padding: 15px;
+  padding: 28px;
   color: #333333;
   font-family: "Museo Sans Bold";
   font-size: 16px;
@@ -873,7 +862,6 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-  text-align: center;
 }
 
 .footer {
@@ -892,21 +880,23 @@
           align-items: center;
 }
 
-.footer .contacts-wrap {
-  -ms-flex-preferred-size: 400px;
-      flex-basis: 400px;
-}
-
 .footer-maps {
   -ms-flex-preferred-size: 55%;
       flex-basis: 55%;
-  min-height: 640px;
 }
 
 .footer-contacts {
-  padding: 50px;
-  padding-left: 80px;
-  padding-right: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 50px;
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
 }
@@ -1376,8 +1366,11 @@ input {
     margin-bottom: 30px;
     margin-right: 50px;
   }
+  .request {
+    max-height: 660px;
+  }
   .request .form {
-    padding-left: 50px;
+    padding: 110px 0;
   }
 }
 
@@ -1496,37 +1489,19 @@ input {
         -ms-flex-align: center;
             align-items: center;
   }
-  .request {
-    background-image: none;
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-  .request-description {
-    margin-top: 0;
-  }
-  .footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-  }
-  .footer-map {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
-  .footer-contacts {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
   .statement-title {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 20px;
+  }
+  .request .description {
+    padding: 50px;
+  }
+  .request .form-headline__title {
+    margin-top: -20px;
+  }
+  .request .form-input button {
+    padding-bottom: 48px;
   }
 }
 
@@ -1617,23 +1592,65 @@ input {
   .documents-blocks__block {
     margin: 15px auto;
   }
-  .request .container {
+  .statement-title {
+    margin: 30px auto;
+    font-size: 13px;
+  }
+  .request {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    max-height: 100%;
+  }
+  .request .description {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .request .description-headline {
+    text-align: center;
+  }
+  .request .form {
+    padding: 50px 0;
+    width: 100%;
+  }
+  .footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
   }
-  .request .description {
+  .footer-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 20px;
   }
-  .statement-title {
-    margin: 30px auto;
-    font-size: 13px;
+  .footer-maps {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
-  .request .description-headline__title {
-    min-width: 300px;
-    font-size: 20px;
+  .footer-contacts {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 0;
+  }
+  .footer-contacts__title {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 60%;
     text-align: center;
   }
 }
@@ -1742,6 +1759,34 @@ input {
   }
   .modal-form__feedback-tel {
     margin-bottom: 0;
+  }
+  .request .description {
+    padding: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .request .description-headline {
+    width: 100%;
+  }
+  .request .description-headline__title {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .request .description-list {
+    margin-left: 15px;
+  }
+  .request .form {
+    padding: 0;
+  }
+  .request .form-headline {
+    margin-top: 25px;
+  }
+  .request .form-input {
+    max-width: 80%;
+  }
+  .request .form-input button {
+    padding-bottom: 28px;
   }
 }
 /*# sourceMappingURL=main.css.map */
