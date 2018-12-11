@@ -1380,6 +1380,9 @@ input {
   .request {
     max-height: 660px;
   }
+  .request .description-headline {
+    margin-top: 20px;
+  }
   .request .form {
     padding: 110px 0;
   }
@@ -1434,11 +1437,20 @@ input {
     width: 75%;
   }
   .modal-wrap {
-    width: 768px;
+    width: 80%;
+  }
+  .modal-description {
+    margin-top: 0;
+  }
+  .modal-description__block {
+    margin-bottom: 10px;
+  }
+  .modal-form {
+    margin-top: 10px;
   }
   .modal-form__headline h1 {
     margin-bottom: 15px;
-    font-size: 25px;
+    font-size: 16px;
   }
   .modal-form__headline h3 {
     margin-bottom: 25px;
@@ -1591,7 +1603,7 @@ input {
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
-    height: 80%;
+    height: 85%;
   }
   .modal-description {
     display: none;
@@ -1608,6 +1620,9 @@ input {
   .modal-form__input button {
     margin-bottom: 15px;
     padding: 25px;
+  }
+  .modal-form__feedback-tel {
+    margin-bottom: 10px;
   }
   .portfolio-headline {
     max-width: 400px;
@@ -1687,6 +1702,7 @@ input {
     margin-top: 20px;
   }
   .footer-maps {
+    width: 100%;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1740,14 +1756,21 @@ input {
     font-size: 12px;
   }
   .header-text__callme {
-    text-align: right;
-    font-size: 10px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
-  .header-text__callme .me {
-    display: none;
+  .header-text__callme::after {
+    content: '';
+    width: 32px;
+    height: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url("../Imgs/auricular-phone-symbol-in-a-circle.png");
   }
   .header-text__callme button {
-    padding: 10px;
+    display: none;
   }
   .subheader-text {
     width: 90%;
@@ -1827,6 +1850,10 @@ input {
   .modal-form__feedback {
     margin: 0;
   }
+  .modal-form__feedback-callus {
+    margin: 10px auto;
+    width: 80%;
+  }
   .modal-form__feedback-tel {
     margin-bottom: 0;
   }
@@ -1842,7 +1869,11 @@ input {
   }
   .request .description-headline__title {
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 16px;
+  }
+  .request .description-headline__subtitle {
+    margin: 15px;
+    line-height: 20px;
   }
   .request .description-list {
     margin-left: 15px;
