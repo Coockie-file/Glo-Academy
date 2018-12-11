@@ -13,6 +13,9 @@
         max-width: 95%
   .suggestion
     &-blocks
+      &__block
+        &:last-child
+          margin-top: 35px
       flex-flow: row wrap
   .documents
     &-blocks
@@ -22,11 +25,36 @@
       max-width: 290px
       &__block
         margin-bottom: 30px
-        margin-right: 50px
+        margin-right: 0
   .request
     max-height: 660px
     & .form
       padding: 110px 0
+      &-input
+        & button
+          padding-bottom: 48px
+  .modal
+    &-description
+      padding: 15px 0 15px 40px
+    &-form
+      padding-top: 25px
+      &__headline
+        & h1
+          margin-bottom: 25px
+          font-size: 16px
+          line-height: 20px
+        & h3
+          font-size: 13px
+          line-height: 15px
+      &__input
+        & input
+          padding: 10px
+        & button
+          margin-bottom: 35px
+          padding: 15px
+      &__feedback
+        &-tel
+          font-size: 18px
 @media (max-width: 992px)
   .container
     max-width: 768px
@@ -103,6 +131,7 @@
       margin: 120px auto
       text-align: center
       &__block
+        margin-right: 0
         margin-bottom: 25px
         box-shadow: 0 0 20px rgba($black, 0.1)
   .documents
@@ -112,10 +141,11 @@
       align-items: center
       margin-bottom: 30px
   .statement
+    padding: 0
     &-title
-      margin-top: 10px
-      margin-bottom: 10px
+      margin: 45px auto
       font-size: 20px
+      line-height: 25px
   .request
     & .description
       padding: 50px 
@@ -150,20 +180,23 @@
         background-color: gray
   .modal
     &-wrap
-      width: 576px
+      width: 70%
       display: flex
       flex-flow: column nowrap
-      min-height: 100vh
+      height: 80%
     &-description
-      order: 1
-      width: 100%
-      height: 100%
-      padding-left: 130px
-      &__block
-        display: flex
-        flex-flow: row  wrap
+      display: none
     &-form
-      height: 100%      
+      margin-top: 20px  
+      &__headline
+        & h3
+          margin-top: 30px
+      &__input
+        & input
+          padding: 20px
+        & button
+          margin-bottom: 15px
+          padding: 25px
   .portfolio
     &-headline
       max-width: 400px
@@ -175,17 +208,23 @@
         line-height: 2em
   .documents
     &-headline
+      margin-bottom: 15px
       &__title
-        font-size: 18px
+        margin-bottom: 0
+        font-size: 24px
     &-blocks
+      margin-top: 0
       flex-flow: column nowrap
       justify-content: center
       &__block
         margin: 15px auto
+  .suggestion
+    &-blocks
+      margin-bottom: 40px
   .statement
     &-title
-      margin: 30px auto
-      font-size: 13px
+      margin: 20px auto
+      font-size: 18px
   .request
     flex-flow: column nowrap
     max-height: 100%
@@ -197,6 +236,9 @@
     & .form
       padding: 50px 0
       width: 100%
+      &-input
+        & button
+          padding-bottom: 28px
   .footer
     flex-flow: column nowrap
     &-wrap
@@ -281,17 +323,16 @@
     &-blocks
       margin-bottom: 30px
   .modal
-    &-wrap
-      padding-bottom: 0
-      padding-top: 70px
-      max-width: 320px
-      height: 500px
-    &-description
-      display: none
-      &__block
-        &:first-child
-          margin-top: 15px
     &-form
+      &__input
+        & input
+          padding: 15px
+        & button
+          padding: 20px
+    &-form
+      &__headline
+        & h1
+          font-size: 18px
       margin: 0
       padding: 0
       &__feedback

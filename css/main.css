@@ -669,7 +669,7 @@
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  margin-bottom: 228px;
+  margin-bottom: 90px;
 }
 
 .documents-blocks__block {
@@ -1062,7 +1062,7 @@
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  width: 1170px;
+  width: 70%;
   max-height: 710px;
   margin: auto;
   background-color: #ffffff;
@@ -1077,7 +1077,9 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  padding: 80px 40px 70px 80px;
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+  padding: 80px 0 70px 80px;
   background-color: #f7f7f7;
   text-align: left;
 }
@@ -1175,6 +1177,8 @@
 .modal-form {
   margin: auto 50px;
   text-align: center;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
 }
 
 .modal-form__headline h1 {
@@ -1353,6 +1357,9 @@ input {
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
   }
+  .suggestion-blocks__block:last-child {
+    margin-top: 35px;
+  }
   .documents-blocks {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1368,13 +1375,41 @@ input {
   }
   .documents-blocks__block {
     margin-bottom: 30px;
-    margin-right: 50px;
+    margin-right: 0;
   }
   .request {
     max-height: 660px;
   }
   .request .form {
     padding: 110px 0;
+  }
+  .request .form-input button {
+    padding-bottom: 48px;
+  }
+  .modal-description {
+    padding: 15px 0 15px 40px;
+  }
+  .modal-form {
+    padding-top: 25px;
+  }
+  .modal-form__headline h1 {
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .modal-form__headline h3 {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .modal-form__input input {
+    padding: 10px;
+  }
+  .modal-form__input button {
+    margin-bottom: 35px;
+    padding: 15px;
+  }
+  .modal-form__feedback-tel {
+    font-size: 18px;
   }
 }
 
@@ -1477,6 +1512,7 @@ input {
     text-align: center;
   }
   .suggestion-blocks__block {
+    margin-right: 0;
     margin-bottom: 25px;
     -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -1494,10 +1530,13 @@ input {
             align-items: center;
     margin-bottom: 30px;
   }
+  .statement {
+    padding: 0;
+  }
   .statement-title {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 45px auto;
     font-size: 20px;
+    line-height: 25px;
   }
   .request .description {
     padding: 50px;
@@ -1544,7 +1583,7 @@ input {
     background-color: gray;
   }
   .modal-wrap {
-    width: 576px;
+    width: 70%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1552,27 +1591,23 @@ input {
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
-    min-height: 100vh;
+    height: 80%;
   }
   .modal-description {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    width: 100%;
-    height: 100%;
-    padding-left: 130px;
-  }
-  .modal-description__block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row  wrap;
-            flex-flow: row  wrap;
+    display: none;
   }
   .modal-form {
-    height: 100%;
+    margin-top: 20px;
+  }
+  .modal-form__headline h3 {
+    margin-top: 30px;
+  }
+  .modal-form__input input {
+    padding: 20px;
+  }
+  .modal-form__input button {
+    margin-bottom: 15px;
+    padding: 25px;
   }
   .portfolio-headline {
     max-width: 400px;
@@ -1582,10 +1617,15 @@ input {
     font-size: 25px;
     line-height: 2em;
   }
+  .documents-headline {
+    margin-bottom: 15px;
+  }
   .documents-headline__title {
-    font-size: 18px;
+    margin-bottom: 0;
+    font-size: 24px;
   }
   .documents-blocks {
+    margin-top: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
@@ -1597,9 +1637,12 @@ input {
   .documents-blocks__block {
     margin: 15px auto;
   }
+  .suggestion-blocks {
+    margin-bottom: 40px;
+  }
   .statement-title {
-    margin: 30px auto;
-    font-size: 13px;
+    margin: 20px auto;
+    font-size: 18px;
   }
   .request {
     -webkit-box-orient: vertical;
@@ -1620,6 +1663,9 @@ input {
   .request .form {
     padding: 50px 0;
     width: 100%;
+  }
+  .request .form-input button {
+    padding-bottom: 28px;
   }
   .footer {
     -webkit-box-orient: vertical;
@@ -1765,21 +1811,18 @@ input {
   .suggestion-blocks {
     margin-bottom: 30px;
   }
-  .modal-wrap {
-    padding-bottom: 0;
-    padding-top: 70px;
-    max-width: 320px;
-    height: 500px;
+  .modal-form__input input {
+    padding: 15px;
   }
-  .modal-description {
-    display: none;
-  }
-  .modal-description__block:first-child {
-    margin-top: 15px;
+  .modal-form__input button {
+    padding: 20px;
   }
   .modal-form {
     margin: 0;
     padding: 0;
+  }
+  .modal-form__headline h1 {
+    font-size: 18px;
   }
   .modal-form__feedback {
     margin: 0;
