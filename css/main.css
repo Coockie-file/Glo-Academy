@@ -1834,6 +1834,9 @@ input {
   .suggestion-blocks {
     margin-bottom: 30px;
   }
+  .modal-wrap {
+    width: 90%;
+  }
   .modal-form__input input {
     padding: 15px;
   }
