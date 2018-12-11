@@ -90,7 +90,7 @@
 
         <form class="feedback-form__input" action="mail.php" method="POST" id="js-ajax">
           <input type="text" name="user_name" placeholder="Ваше имя" required>
-          <input type="tel"  name="user_phone"  placeholder="Ваш телефон" required> 
+          <input type="tel"  name="user_phone"  placeholder="Ваш телефон" pattern="+7[0-9]{10}" required> 
           <button class="feedback-form__input-button" type="submit">Получить бесплатный дизайн-проект</button>
         </form>
 
@@ -100,7 +100,7 @@
           <img src="Imgs/feedback/phone.png" alt="">
           <div class="feedback-form__call-us">или перезвоните нам сами 
             
-            <div class="feedback-form__call-us-phone">+7 (495) 42-251-31</div>
+            <div class="feedback-form__call-us-phone"><a href="tel:+74954225131">+7 (495) 42-251-31</a></div>
           </div>
         </div>
       </div>
@@ -156,7 +156,7 @@
           <div class="repair-blocks__item-legend">
             <p>Ремонт ванных комнат и с/у
               <br>
-              <a href="#">Узнать цены</a>
+              <a href="#" id="click">Узнать цены</a>
             </p>
           </div>
         </div>
@@ -168,7 +168,7 @@
           <div class="repair-blocks__item-legend">
             <p> Ремонт комнат и квартир
               <br>
-              <a href="#">Узнать цены</a>
+              <a href="#" id="click">Узнать цены</a>
             </p>
           </div>
         </div>
@@ -180,7 +180,7 @@
           <div class="repair-blocks__item-legend">
             <p>Отделка офисных помещений
               <br>
-              <a href="#">Узнать цены</a>
+              <a href="#" id="click">Узнать цены</a>
             </p>
           </div>
         </div>
@@ -192,7 +192,7 @@
           <div class="repair-blocks__item-legend">
             <p>Ремонт в новостройках
               <br>
-              <a href="#">Узнать цены</a>
+              <a href="#" id="click">Узнать цены</a>
             </p>
           </div>
         </div>
@@ -204,7 +204,7 @@
           <div class="repair-blocks__item-legend">
             <p>Ремонт кухонь
               <br>
-              <a href="#">Узнать цены</a>
+              <a href="#" id="click">Узнать цены</a>
             </p>
           </div>
         </div>
@@ -216,7 +216,7 @@
           <div class="repair-blocks__item-legend">
             <p>Ремонт дач и коттеджей
               <br>
-              <a href="#">Узнать цены</a>
+              <a href="#" id="click">Узнать цены</a>
             </p>
           </div>
         </div>
@@ -459,7 +459,7 @@
 
     <form class="form-input" action="mail.php" method="POST" id="js-ajax-second">
         <input type="text" name="user_name" placeholder="Ваше имя" required>
-        <input type="tel" name="user_phone" placeholder="Ваш телефон" required>
+        <input type="tel" name="user_phone" placeholder="Ваш телефон" pattern="+7[0-9]{10}" required>
         <button class="modal-form__input-button" type="submit">Рассчитать стоимость</button>
     </form>
 
@@ -537,13 +537,13 @@
 
         <form class="modal-form__input" action="mail.php" method="POST" id="js-ajax-modal">
           <input type="text" name="user_name" placeholder="Ваше имя" required>
-          <input type="tel" name="user_phone" placeholder="Ваш телефон" required>
+          <input type="tel" name="user_phone" placeholder="Ваш телефон" pattern="+7[0-9]{10}" required>
           <button class="modal-form__input-button" type="submit">Узнать стоимость</button>
         </form>
         
         <div class="modal-form__feedback">
           <div class="modal-form__feedback-callus">Или Вы можете перезвонить нам сами по телефону:</div>
-          <div class="modal-form__feedback-tel">+7 (8182) 42-51-31</div>
+          <div class="modal-form__feedback-tel"><a href="tel:+74954225131">+7 (495) 42-251-31</a></div>
         </div>
       </div>
     </div>
@@ -583,7 +583,7 @@
         <div class="footer-contacts__phone">
           <div class="footer-contacts__phone-icon"></div>
           <div class="footer-contacts__phone-text">Телефон:  <br>  
-              <strong>+ 7 (495) 42-251-31</strong>
+            <a href="tel:+74954225131"><strong>+7 (495) 42-251-31</strong></a>
           </div>
         </div>
       </div>
@@ -604,7 +604,13 @@ $(document).ready(function(){
     $('.modal').addClass('modal-visible');
   $('.close').on('click', function(){
     $('.modal').removeClass('modal-visible');
-  })
+  });
+  });
+  $('#click').on('click', function() {
+    $('.modal').addClass('modal-visible');
+  $('.close').on('click', function(){
+    $('.modal').removeClass('modal-visible');
+  });
   });
   $('.slider').slick({
     slidesToShow: 3,

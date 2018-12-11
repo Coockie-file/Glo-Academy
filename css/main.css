@@ -285,17 +285,19 @@
   border: 2px solid #cccccc;
 }
 
-.feedback-form__call-us-phone {
+.feedback-form__call-us-phone a {
   color: #333333;
   font-family: "Museo Sans Bold";
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
+  text-decoration: none;
 }
 
 .portfolio {
+  padding: 80px 0;
+  background: url("../Imgs/rectangle.png") -70% no-repeat;
   background-color: #f5f5f5;
-  padding: 100px 0;
 }
 
 .portfolio .portfolio-wrap {
@@ -456,6 +458,7 @@
 }
 
 .repair-blocks__item:hover {
+  cursor: pointer;
   -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
           box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
 }
@@ -1019,7 +1022,9 @@
   line-height: 26px;
 }
 
-.footer-contacts__phone-text strong {
+.footer-contacts__phone-text a {
+  color: #000000;
+  text-decoration: none;
   font-family: "Museo Sans Bold";
 }
 
@@ -1246,7 +1251,8 @@
   line-height: 20px;
 }
 
-.modal-form__feedback-tel {
+.modal-form__feedback-tel a {
+  text-decoration: none;
   color: #333333;
   font-family: "Museo Sans Bold";
   font-size: 24px;
@@ -1414,6 +1420,9 @@ input {
   .modal-form__feedback-tel {
     font-size: 18px;
   }
+  .portfolio {
+    background-size: 100%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1437,9 +1446,14 @@ input {
     width: 75%;
   }
   .modal-wrap {
-    width: 80%;
+    width: 90%;
   }
   .modal-description {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    width: 60%;
     margin-top: 0;
   }
   .modal-description__block {
@@ -1555,6 +1569,9 @@ input {
   }
   .request .form-headline__title {
     margin-top: -20px;
+  }
+  .request .form-input {
+    max-width: 90%;
   }
   .request .form-input button {
     padding-bottom: 48px;
@@ -1905,6 +1922,12 @@ input {
   }
   .repair-items__item {
     margin-bottom: 35px;
+  }
+  .repair-blocks__item {
+    margin: 20px 5px;
+  }
+  .footer-contacts__shedule {
+    margin-right: 30px;
   }
 }
 /*# sourceMappingURL=main.css.map */
